@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root{
+    --theme-color:#131313;
+    --primary-color:#47DDFF;
+    --secondary-color:#f7c331;
+    --color-text:#fff;
+    --color-text-inverse:#000;
+
+    --conversor-background:#2b2b2b;
+}
+
+
+body{
+    padding-top: 70px;
+    background-color: var(--theme-color);
+
+    font-family: 'Montserrat', sans-serif;
+
+    color: var(--color-text);
+}
+
+html{
+    /* el scroll en la barra nav no es de golpe */
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+.vertical-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.horizontal-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

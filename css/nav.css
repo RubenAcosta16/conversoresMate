@@ -1,0 +1,175 @@
+
+.topheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--theme-color);
+
+    box-shadow: 0 4px 5px #e5e5e5;
+
+    width: 100%;
+    /* es para que la imagen no este arriba del nav */
+    z-index: 100;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+
+    line-height: 70px;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    color: var(--primary-color);
+}
+
+.nav-logo img{
+    width: 50px;
+
+    border-radius: 15px;
+    margin: 0 5px;
+    margin-right: 10px;
+}
+
+
+.menu{
+    list-style: none;
+    /* padding-left: 0; */
+
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    text-decoration: none;
+    padding: 0 15px;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: .3s;
+}
+
+.open-menu, .close-menu{
+    display: none;
+}
+
+
+.menu li:hover{
+    color: var(--secondary-color);
+}
+
+
+@media(max-width:950px){
+    
+    
+    /* .topnav{
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+    
+        line-height: 70px;
+    } */
+    
+    /* .nav-logo{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        border: none;
+    }
+    
+    .nav-logo img{
+        width: 50px;
+    
+        border-radius: 15px;
+        margin: 0 5px;
+    } */
+    
+    
+    .menu{
+        
+        flex-direction: column;
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        background-color: var(--conversor-background);
+    
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+        align-items: center;
+
+        height: 100%;
+        /* esto cuando no hay espacio en el eje y le pone automaticamente una barra scroll */
+        overflow-y: auto;
+
+        opacity: 0;
+        /* no se puede hacer click con esto */
+        pointer-events: none;
+
+        transition: opacity .3s;
+    }
+    
+    .menu li{
+        text-decoration: none;
+        padding: 0 15px;
+    
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+    
+        transition: .3s;
+    }
+    
+    .open-menu, .close-menu{
+        display: block;
+        /* esto quita estilos boton */
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        color: var(--text-color);
+
+    }
+
+    .close-menu{
+        font-size: 60px;
+        align-self: flex-end;
+
+        padding: 3px 17px;
+    }
+
+    .open-menu{
+        font-size: 45px;
+        align-self: flex-end;
+
+        padding: 6px 17px;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        /* vuelve el click */
+        pointer-events: all;
+    }
+    
+    
+    /* .menu li:hover{
+        color: var(--secondary-color);
+    } */
+    
+}
