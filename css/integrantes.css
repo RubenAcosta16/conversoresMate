@@ -1,0 +1,16 @@
+.integrantes-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.integrantes-title{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.integrantes-item{
+    list-style: none;
+}

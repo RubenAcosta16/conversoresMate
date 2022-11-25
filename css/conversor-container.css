@@ -1,0 +1,121 @@
+.main-container{
+    
+}
+
+
+
+.conversor-2, .conversor-3{
+    display: none;
+}
+
+.conversor-op2{
+    display: none;
+}
+
+
+
+
+.conversor-on{
+    display: block;
+}
+
+.conversor-off{
+    display: none;
+}
+
+
+.title{
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.conversor-title{
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.conversor-title p{
+    font-size: 25px;
+}
+
+
+
+
+.conversor{
+    background-color: var(--conversor-background);
+
+    padding: 60px;
+    border-radius: 20px;
+
+    margin: 60px 0;
+}
+
+.conversor-buttons{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.conversor-buttons p{
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+
+.conversor-buttons-options{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    margin: 20px 0px;
+
+    
+}
+
+.conversor-button{
+    background-color: var(--primary-color);
+    color: var(--theme-color);
+    border: none;
+    font-size: 20px;
+    
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+
+    margin-top: 15px;
+
+}
+
+.conversor-button{
+    background-color: var(--primary-color);
+    color: var(--theme-color);
+    border: none;
+    font-size: 20px;
+    
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.op1,.op2{
+    background-color: var(--secondary-color);
+}
+
+.conversor-button:hover{
+    filter: brightness(130%);
+}
+
+
+
+
+.conversor-options{
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 40px 0;
+}
