@@ -25,7 +25,8 @@
 .nav-logo{
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     border: none;
     color: var(--primary-color);
 }
