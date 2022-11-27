@@ -33,6 +33,11 @@ html{
     scroll-behavior: smooth;
 }
 
+section[id]{
+    /* cuando le des en la barra y te mande a esa parte de la pagina, la barra fixed tapa parte del contenido, esto lo arregla */
+    scroll-margin-top: 70px;
+}
+
 
 a{
     text-decoration: none;
