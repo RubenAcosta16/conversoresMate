@@ -24,9 +24,5 @@ menuLinks.forEach(menuLink =>{
         menu.classList.remove("menu_opened");
     });
 
-    const hash=menuLink.getAttribute("href");
-    const target=document.querySelector(hash);
-    if(target){
-        observer.observe(target);
-    }
+
 });
