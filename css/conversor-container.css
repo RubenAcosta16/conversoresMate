@@ -199,6 +199,17 @@
     
         justify-content: space-around;
     
-        margin: 40px 0;
+        /* margin: 40px 0; */
+
+        /* background-color: red; */
+    }
+
+
+    /* .conversor-option{
+        background-color: red;
+    } */
+
+    .conversor-item{
+/* background-color: rebeccapurple; */
     }
 }

@@ -7,13 +7,13 @@
 
 
 :root{
-    --theme-color:#202020;
+    --theme-color:#181818;
     --primary-color:#47DDFF;
     --secondary-color:#f7c331;
     --color-text:#fff;
     --color-text-inverse:#000;
 
-    --conversor-background:#333333;
+    --conversor-background:#2d2d2d;
 }
 
 

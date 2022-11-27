@@ -62,69 +62,28 @@ const op2=document.querySelectorAll(".op2");
 let conversor_op1=document.querySelectorAll(".conversor-op1");
 let conversor_op2=document.querySelectorAll(".conversor-op2");
 
+for(let i=0;i<3;i++){
+    op1[i].addEventListener("click",()=>{
+        conversor_op1[i].classList.remove("conversor-off");
+        conversor_op1[i].classList.add("conversor-on");
+    
+        conversor_op2[i].classList.remove("conversor-on");
+        conversor_op2[i].classList.add("conversor-off");
+    
+        console.log("op1");
+    });
 
+    op2[i].addEventListener("click",()=>{
+    conversor_op1[i].classList.remove("conversor-on");
+    conversor_op1[i].classList.add("conversor-off");
 
-op1[0].addEventListener("click",()=>{
-    conversor_op1[0].classList.remove("conversor-off");
-    conversor_op1[0].classList.add("conversor-on");
-
-    conversor_op2[0].classList.remove("conversor-on");
-    conversor_op2[0].classList.add("conversor-off");
-
-    console.log("op1");
-});
-
-op2[0].addEventListener("click",()=>{
-    conversor_op1[0].classList.remove("conversor-on");
-    conversor_op1[0].classList.add("conversor-off");
-
-    conversor_op2[0].classList.remove("conversor-off");
-    conversor_op2[0].classList.add("conversor-on");
-
-    console.log("op2");
-});
-
-
-
-
-op1[1].addEventListener("click",()=>{
-    conversor_op1[1].classList.remove("conversor-off");
-    conversor_op1[1].classList.add("conversor-on");
-
-    conversor_op2[1].classList.remove("conversor-on");
-    conversor_op2[1].classList.add("conversor-off");
-
-    console.log("op1");
-});
-
-op2[1].addEventListener("click",()=>{
-    conversor_op1[1].classList.remove("conversor-on");
-    conversor_op1[1].classList.add("conversor-off");
-
-    conversor_op2[1].classList.remove("conversor-off");
-    conversor_op2[1].classList.add("conversor-on");
+    conversor_op2[i].classList.remove("conversor-off");
+    conversor_op2[i].classList.add("conversor-on");
 
     console.log("op2");
 });
+}
 
 
 
-op1[2].addEventListener("click",()=>{
-    conversor_op1[2].classList.remove("conversor-off");
-    conversor_op1[2].classList.add("conversor-on");
 
-    conversor_op2[2].classList.remove("conversor-on");
-    conversor_op2[2].classList.add("conversor-off");
-
-    console.log("op1");
-});
-
-op2[2].addEventListener("click",()=>{
-    conversor_op1[2].classList.remove("conversor-on");
-    conversor_op1[2].classList.add("conversor-off");
-
-    conversor_op2[2].classList.remove("conversor-off");
-    conversor_op2[2].classList.add("conversor-on");
-
-    console.log("op2");
-});
