@@ -83,14 +83,13 @@
         line-height: 70px;
     } */
     
-    /* .nav-logo{
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        border: none;
+    .nav-logo{
+
+
+        /* margin:0 auto; */
     }
     
-    .nav-logo img{
+    /* .nav-logo img{
         width: 50px;
     
         border-radius: 15px;
@@ -157,7 +156,7 @@
 
     .open-menu{
         font-size: 45px;
-        align-self: flex-end;
+        /* justify-self: flex-end; */
 
         padding: 6px 17px;
     }

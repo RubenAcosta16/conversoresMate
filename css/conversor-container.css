@@ -87,6 +87,7 @@
 
     margin-top: 15px;
 
+    transition: filter .3s;
 }
 
 
@@ -96,7 +97,8 @@
 }
 
 .conversor-button:hover{
-    filter: brightness(130%);
+    filter: brightness(140%);
+    
 }
 
 
