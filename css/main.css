@@ -8,6 +8,8 @@
 
 :root{
     --theme-color:#181818;
+    --theme-color-inverse:#d1d1d1;
+
     --primary-color:#47DDFF;
     --secondary-color:#f7c331;
     --color-text:#fff;
