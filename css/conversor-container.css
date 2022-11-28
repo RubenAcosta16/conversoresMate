@@ -4,7 +4,7 @@
 
 
 
-.conversor-2, .conversor-3{
+.conversor-2, .conversor-3, .conversor-2-sum{
     display: none;
 }
 
@@ -125,7 +125,7 @@
 
 
 
-.op1,.op2{
+.op1,.op2, .suma-binario, .suma-hexadecimal{
     background-color: var(--secondary-color);
 }
 
@@ -169,13 +169,13 @@
     flex-direction: column;
 }
 
-.conversor-ans{
+.conversor-ans, .conversor-ans-sum{
     display: inline;
     margin: 0 10px;
     font-size: 27px;
 }
 
-.input-conversor{
+.input-conversor, .input-conversor-sum{
     border: none;
     
     width: 100%;
@@ -223,6 +223,28 @@
     font-size: 18px;
     padding: 20px;
 }
+
+
+
+
+
+
+.conversor-buttons-options-sum{
+    justify-content: space-around;
+}
+
+.conversor-title-sum{
+    margin-bottom: 30px;
+    border-bottom:4px solid var(--primary-color);
+}
+
+.conversor-tutorial-title-sum{
+    border-bottom:4px solid var(--primary-color);
+}
+
+
+
+
 
 
 
@@ -362,7 +384,7 @@
     .conversor-tutorial-text{
         /* background-color: red; */
         font-size: 18px;
-
+        
     }
 
 

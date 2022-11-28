@@ -27,7 +27,7 @@ window.addEventListener("load",function(){
     // }
 
 
-    input_conversor[0].addEventListener("input",function(){
+            input_conversor[0].addEventListener("input",function(){
                 let num=parseInt(input_conversor[0].value);
                 
                     conversor_ans[0].innerHTML= num*2;
