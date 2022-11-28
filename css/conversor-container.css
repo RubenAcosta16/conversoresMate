@@ -46,7 +46,8 @@
 
 
 .conversor{
-    background-color: var(--conversor-background);
+    /* background-color: var(--conversor-background); */
+    background-image: url("../img/WhatsApp\ Image\ 2022-11-28\ at\ 4.37.12\ PM.jpeg");
 
     padding: 60px;
     border-radius: 20px;
