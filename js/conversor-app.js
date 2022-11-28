@@ -28,9 +28,33 @@ window.addEventListener("load",function(){
 
 
             input_conversor[0].addEventListener("input",function(){
-                let num=parseInt(input_conversor[0].value);
+
+                let num=parseInt(input_conversor[0].value,2);
                 
-                    conversor_ans[0].innerHTML= num*2;
+                
+                    conversor_ans[0].innerHTML= num;
+                
+                
+                
+                // console.log(typeof num);
+                // console.log(num);
+            });
+
+            
+            input_conversor[1].addEventListener("input",function(){
+
+                let num=parseInt(input_conversor[1].value);
+                
+                function convertToBinary1 (number) {
+                    let num = number;
+                    let binary = (num % 2).toString();
+                    for (; num > 1; ) {
+                        num = parseInt(num / 2);
+                        binary =  (num % 2) + (binary);
+                    }
+                    return binary;
+                }
+                    conversor_ans[1].innerHTML= convertToBinary1(num);
                 
                 
                 
@@ -50,3 +74,4 @@ window.addEventListener("load",function(){
             
     // email.addEventListener("change",envioAutomatico);
 });
+

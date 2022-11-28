@@ -76,10 +76,23 @@ window.addEventListener("load",function(){
     // }    
 
             input_conversor_sum_n1[0].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[0].value);
-                let num2=parseInt(input_conversor_sum_n2[0].value);
+                let num1=parseInt(input_conversor_sum_n1[0].value,2);
+                let num2=parseInt(input_conversor_sum_n2[0].value,2);
+
+ 
+
+                conversor_ans_sum[0].innerHTML= (num1+num2).toString(2);
                 
-                conversor_ans_sum[0].innerHTML= num1+num2;
+
+            });
+        
+            input_conversor_sum_n2[0].addEventListener("input",function(){
+                let num1=parseInt(input_conversor_sum_n1[0].value,2);
+                let num2=parseInt(input_conversor_sum_n2[0].value,2);
+
+ 
+
+                conversor_ans_sum[0].innerHTML= (num1+num2).toString(2);
                 
                 
                 
@@ -87,6 +100,11 @@ window.addEventListener("load",function(){
                 // console.log(num);
             });
             
+
+
+
+            
+
             input_conversor_sum_n1[1].addEventListener("input",function(){
                 let num1=parseInt(input_conversor_sum_n1[1].value);
                 let num2=parseInt(input_conversor_sum_n2[1].value);
@@ -99,24 +117,6 @@ window.addEventListener("load",function(){
                 // console.log(num);
             });
 
-
-
-
-
-
-
-            input_conversor_sum_n2[0].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[0].value);
-                let num2=parseInt(input_conversor_sum_n2[0].value);
-                
-                conversor_ans_sum[0].innerHTML= num1+num2;
-                
-                
-                
-                // console.log(typeof num);
-                // console.log(num);
-            });
-            
             input_conversor_sum_n2[1].addEventListener("input",function(){
                 let num1=parseInt(input_conversor_sum_n1[1].value);
                 let num2=parseInt(input_conversor_sum_n2[1].value);
