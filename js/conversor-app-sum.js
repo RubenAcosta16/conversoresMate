@@ -75,60 +75,62 @@ window.addEventListener("load",function(){
     //     });
     // }    
 
-            input_conversor_sum_n1[0].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[0].value,2);
-                let num2=parseInt(input_conversor_sum_n2[0].value,2);
-
- 
-
-                conversor_ans_sum[0].innerHTML= (num1+num2).toString(2);
-                
-
-            });
+            input_conversor_sum_n1[0].addEventListener("input",sum1bin);
         
-            input_conversor_sum_n2[0].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[0].value,2);
-                let num2=parseInt(input_conversor_sum_n2[0].value,2);
-
- 
-
-                conversor_ans_sum[0].innerHTML= (num1+num2).toString(2);
-                
-                
-                
-                // console.log(typeof num);
-                // console.log(num);
-            });
+            input_conversor_sum_n2[0].addEventListener("input",sum1bin);
             
 
 
 
             
 
-            input_conversor_sum_n1[1].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[1].value);
-                let num2=parseInt(input_conversor_sum_n2[1].value);
-                
-                conversor_ans_sum[1].innerHTML= num1-num2;
-                
-                
-                
-                // console.log(typeof num);
-                // console.log(num);
-            });
+            input_conversor_sum_n1[1].addEventListener("input",sum2hexa);
 
-            input_conversor_sum_n2[1].addEventListener("input",function(){
-                let num1=parseInt(input_conversor_sum_n1[1].value);
-                let num2=parseInt(input_conversor_sum_n2[1].value);
-                
-                conversor_ans_sum[1].innerHTML= num1-num2;
-                
-                
-                
-                // console.log(typeof num);
-                // console.log(num);
-            });
+            input_conversor_sum_n2[1].addEventListener("input",sum2hexa);
 
             
     // email.addEventListener("change",envioAutomatico);
+
+    function sum1bin(){
+        let num1=parseInt(input_conversor_sum_n1[0].value,2);
+        let num2=parseInt(input_conversor_sum_n2[0].value,2);
+    
+    
+    
+        conversor_ans_sum[0].innerHTML= (num1+num2).toString(2);
+    }
+    
+    function sum2hexa(){
+        let num1=input_conversor_sum_n1[1].value;
+        let num2=input_conversor_sum_n2[1].value;
+        
+        let res=sumaHexa(num1,num2);
+    
+        conversor_ans_sum[1].innerHTML= res;
+    }
 });
+
+
+
+
+
+
+
+
+
+function sumaHexa(num1,num2){
+    let n1=hexaToDec(num1);
+    let n2=hexaToDec(num2);
+    
+    let r=n1+n2;
+//console.log (r.toString(16).toUpperCase());
+return r.toString(16).toUpperCase()
+}
+
+function hexaToDec(n){
+    let dec2 = parseInt(n,16);
+    //console.log("Convertido a hexadecimal es: " +dec2);
+   return dec2;
+   }
+
+// console.log(sumaHexa("f","10"));

@@ -45,16 +45,8 @@ window.addEventListener("load",function(){
 
                 let num=parseInt(input_conversor[1].value);
                 
-                function convertToBinary1 (number) {
-                    let num = number;
-                    let binary = (num % 2).toString();
-                    for (; num > 1; ) {
-                        num = parseInt(num / 2);
-                        binary =  (num % 2) + (binary);
-                    }
-                    return binary;
-                }
-                    conversor_ans[1].innerHTML= convertToBinary1(num);
+
+                    conversor_ans[1].innerHTML= decToBin(num);
                 
             });
 
@@ -64,9 +56,7 @@ window.addEventListener("load",function(){
 
                 let num=parseInt(input_conversor[2].value);
                 
-                function decToHex(n){
-                    return n.toString(16).toUpperCase()
-                }
+                
                 
                 console.log(decToHex(15));
                 conversor_ans[2].innerHTML= decToHex(num);
@@ -76,15 +66,23 @@ window.addEventListener("load",function(){
 
             input_conversor[3].addEventListener("input",function(){
 
-                let num=parseInt(input_conversor[3].value);
+                let num=input_conversor[3].value;
                 
-                    
-                
-                // console.log(decToHex(15));
-                conversor_ans[3].innerHTML= num+16;
+
+                conversor_ans[3].innerHTML= hexaToDec(num);
                 
             });
-
+            
+               
+               
+               
+            //    console.log(hexaToDec("1f"));
+               
+               
+               
+               
+               
+               
             
 
 
@@ -101,3 +99,24 @@ window.addEventListener("load",function(){
     // email.addEventListener("change",envioAutomatico);
 });
 
+// 2
+function decToBin (number) {
+    let num = number;
+    let binary = (num % 2).toString();
+    for (; num > 1; ) {
+        num = parseInt(num / 2);
+        binary =  (num % 2) + (binary);
+    }
+    return binary;
+}
+// 3
+function decToHex(n){
+    return n.toString(16).toUpperCase()
+}
+
+// 4
+function hexaToDec(n){
+    let dec2 = parseInt(n,16);
+    //console.log("Convertido a hexadecimal es: " +dec2);
+   return dec2;
+   }

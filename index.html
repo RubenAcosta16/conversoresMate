@@ -79,9 +79,9 @@
 
                 <div class="conversor-buttons-options">
                     
-                    <button class="conversor-button binario-decimal">Binario y Decimal</button>
-                    <button class="conversor-button decimal-hexadecimal">Decimal y Hexadecimal</button>
-                    <button class="conversor-button hexadecimal-binario">Hexadecimal y Binario</button>
+                    <a href="#conversor-1"><button class="conversor-button binario-decimal">Binario y Decimal</button></a>
+                    <a href="#conversor-2"><button class="conversor-button decimal-hexadecimal">Decimal y Hexadecimal</button></a>
+                    <a href="#conversor-3"><button class="conversor-button hexadecimal-binario">Hexadecimal y Binario</button></a>
                     
                     
                 </div>
@@ -90,7 +90,7 @@
 
 
         <div class="conversor" id="conversor">
-            <div class="conversor-1">
+            <div class="conversor-1" id="conversor-1">
                 <p class="conversor-title">Binario y Decimal    
                     <!-- <div class="conversor-title-line"></div> -->
                 </p>
@@ -134,7 +134,7 @@
             </div>
 
 
-            <div class="conversor-2">
+            <div class="conversor-2" id="conversor-2">
                 <p class="conversor-title">Decimal y Hexadecimal</p>
                 <div class="conversor-options">
                     <button class="conversor-button op1">Decimal a Hexadecimal</button>
@@ -179,7 +179,7 @@
             </div>
 
 
-            <div class="conversor-3">
+            <div class="conversor-3" id="conversor-3">
                 <p class="conversor-title">Hexadecimal y Binario</p>
                 <div class="conversor-options">
                     <button class="conversor-button op1">Hexadecimal a Binario</button>
@@ -240,8 +240,8 @@
 
             <div class="conversor-buttons-options conversor-buttons-options-sum">
                 
-                <button class="conversor-button suma-binario">Binario</button>
-                <button class="conversor-button suma-hexadecimal">Hexadecimal</button>
+                <a href="#conversor-1-sum"><button class="conversor-button suma-binario">Binario</button></a>
+                <a href="#conversor-2-sum"><button class="conversor-button suma-hexadecimal">Hexadecimal</button></a>
 
                 
                 
@@ -249,7 +249,7 @@
         </div>
 
 
-        <div class="conversor-1-sum">
+        <div class="conversor-1-sum" id="conversor-1-sum">
             <p class="conversor-title conversor-title-sum">Suma Binario   
                 
             </p>
@@ -260,11 +260,14 @@
 
             <div class="conversor-item-list">
                 <div class="conversor-item">
-                    <label for="">Numero 1:</label>
-                    <input type="number" class="input-conversor-sum input-conversor-sum-n1">
-
-                    <label for="">Numero 2:</label>
-                    <input type="number" class="input-conversor-sum input-conversor-sum-n2">
+                    <!-- <label for="">Numero 1:</label> -->
+                    <div class="conversor-item-signo-mas-df">
+                        <span class="conversor-item-signo-mas">+</span><input type="number" class="input-conversor-sum input-conversor-sum-n1" placeholder="Numero 1:">
+                    </div>
+                    <!-- <label for="">Numero 2:</label> -->
+                    <div class="conversor-item-signo-mas-df">
+                        <span>+</span><input type="number" class="input-conversor-sum input-conversor-sum-n2" placeholder="Numero 2:">
+                    </div>
                 </div>
                 
                 
@@ -286,7 +289,7 @@
         </div>
 
 
-        <div class="conversor-2-sum">
+        <div class="conversor-2-sum" id="conversor-2-sum">
             <p class="conversor-title conversor-title-sum">Suma Hexadecimal   
                 
             </p>
@@ -297,11 +300,15 @@
 
             <div class="conversor-item-list">
                 <div class="conversor-item">
-                    <label for="">Numero 1:</label>
-                    <input type="number" class="input-conversor-sum input-conversor-sum-n1">
+                    <div class="conversor-item-signo-mas-df">
+                        <!-- <label for="">Numero 1:</label> -->
+                        <span class="conversor-item-signo-mas">+</span><input type="text" class="input-conversor-sum input-conversor-sum-n1" placeholder="Numero 1:">
+                    </div>
 
-                    <label for="">Numero 2:</label>
-                    <input type="number" class="input-conversor-sum input-conversor-sum-n2">
+                    <div class="conversor-item-signo-mas-df">
+                        <!-- <label for="">Numero 2:</label> -->
+                        <span>+</span><input type="text" class="input-conversor-sum input-conversor-sum-n2" placeholder="Numero 2:">
+                    </div>
                 </div>
                 
                 
