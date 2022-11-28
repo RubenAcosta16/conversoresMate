@@ -56,12 +56,38 @@ window.addEventListener("load",function(){
                 }
                     conversor_ans[1].innerHTML= convertToBinary1(num);
                 
-                
-                
-                // console.log(typeof num);
-                // console.log(num);
             });
-    
+
+
+
+            input_conversor[2].addEventListener("input",function(){
+
+                let num=parseInt(input_conversor[2].value);
+                
+                function decToHex(n){
+                    return n.toString(16).toUpperCase()
+                }
+                
+                console.log(decToHex(15));
+                conversor_ans[2].innerHTML= decToHex(num);
+                
+            });
+            
+
+            input_conversor[3].addEventListener("input",function(){
+
+                let num=parseInt(input_conversor[3].value);
+                
+                    
+                
+                // console.log(decToHex(15));
+                conversor_ans[3].innerHTML= num+16;
+                
+            });
+
+            
+
+
             input_conversor[5].addEventListener("input",function(){
                 let num=parseInt(input_conversor[5].value);
     
