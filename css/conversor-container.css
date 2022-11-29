@@ -404,12 +404,14 @@
     .conversor-tutorial-text{
         /* background-color: red; */
         font-size: 18px;
-        
+        margin: 0 auto;
     }
 
     .conversor-tutorial-text img{
         
-        width: 200px;
+        margin-top: 20px;
+        width: 190px;
+        transform: scale(1.4);
     }
     
 
