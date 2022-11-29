@@ -243,6 +243,7 @@
 
 .conversor-tutorial-text img{
     border-radius: 20px;
+    /* min-width: 200px; */
 }
 
 
@@ -405,6 +406,12 @@
         font-size: 18px;
         
     }
+
+    .conversor-tutorial-text img{
+        
+        width: 200px;
+    }
+    
 
 
 
