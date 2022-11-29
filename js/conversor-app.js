@@ -78,7 +78,14 @@ window.addEventListener("load",function(){
                
             //    console.log(hexaToDec("1f"));
                
-               
+            input_conversor[4].addEventListener("input",function(){
+
+                let num=input_conversor[4].value;
+                
+
+                conversor_ans[4].innerHTML= hexaToBin(num);
+                
+            });
                
                
                
@@ -89,7 +96,7 @@ window.addEventListener("load",function(){
             input_conversor[5].addEventListener("input",function(){
                 let num=parseInt(input_conversor[5].value);
     
-                conversor_ans[5].innerHTML= num/2;
+                conversor_ans[5].innerHTML= binToHexa(num,2,16);
                 
                 // console.log(typeof num);
                 // console.log(num);
@@ -120,3 +127,20 @@ function hexaToDec(n){
     //console.log("Convertido a hexadecimal es: " +dec2);
    return dec2;
    }
+
+//    function hexaToBin(n){
+//     let decimal=parseInt(n,16); 
+
+//     return decimal.
+//    }
+function hexaToBin(hex){
+    return (parseInt(hex, 16).toString(2)).padStart(4);
+}
+
+// function binToHexa(num){
+//     Number(parseInt(num,2)).toString(16);
+// }
+
+function binToHexa(value,sourceBase,targetBase){
+    return Number(parseInt(value,sourceBase)).toString(targetBase).toUpperCase();
+}
