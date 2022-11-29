@@ -300,7 +300,7 @@
     .conversor{
         background-color: var(--conversor-background);
     
-        padding: 60px;
+        padding: 30px;
         border-radius: 20px;
     
         /* margin: 60px 0; */
@@ -405,6 +405,7 @@
         /* background-color: red; */
         font-size: 18px;
         margin: 0 auto;
+        padding: 20px 0;
     }
 
     .conversor-tutorial-text img{
