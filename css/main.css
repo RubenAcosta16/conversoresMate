@@ -7,7 +7,7 @@
 
 
 :root{
-    --theme-color:#181818;
+    --theme-color:#1d1d1d;
     --theme-color-inverse:#fff;
 
     --primary-color:#47DDFF;
@@ -16,7 +16,7 @@
     --color-text-inverse:#000;
     --color-text-placeholder:#aaa;
 
-    --conversor-background:#2d2d2d;
+    --conversor-background:#363636;
 }
 
 
