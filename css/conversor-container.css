@@ -239,14 +239,20 @@
     /* background-color: red; */
     font-size: 18px;
     padding: 20px;
+    /* margin: 100px 0; */
 }
 
 .conversor-tutorial-text img{
+    /* margin: 10px 0; */
     border-radius: 20px;
     /* min-width: 200px; */
+    background-color: var(--theme-color-inverse);
+    padding: 5px;
 }
 
-
+.subtitulo{
+    font-weight: 600;
+}
 
 
 .conversor-buttons-options-sum{
@@ -404,7 +410,7 @@
     .conversor-tutorial-text{
         /* background-color: red; */
         font-size: 18px;
-        margin: 0 auto;
+        margin: 10px auto;
         padding: 20px 0;
     }
 

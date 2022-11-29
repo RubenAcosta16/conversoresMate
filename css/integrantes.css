@@ -37,6 +37,11 @@
     margin-top: 20px;
 }
 
+.integrantes-text img{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
 
 
 @media(max-width:950px){
@@ -58,5 +63,9 @@
     
     .integrantes-text{
         font-size: 22px;
+    }
+
+    .integrantes-text img{
+        width: 155px;
     }
 }

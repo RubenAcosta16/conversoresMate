@@ -71,7 +71,7 @@
         
             <div class="conversor-container-title">
                 <h1 class="title">Conversores Mate</h1>
-                <p>Estos son los conversores que mi equipo y yo hicimos, de la clase de Matemáticas Discretas</p>
+                <p>Estos son los conversores que vimos en la clase de Matemáticas Discretas</p>
             </div>
 
             <div class="conversor-buttons">
@@ -95,8 +95,8 @@
                     <!-- <div class="conversor-title-line"></div> -->
                 </p>
                 <div class="conversor-options">
-                    <button class="conversor-button op1">Binario a Decimal</button>
-                    <button class="conversor-button op2">Decimal a Binario</button>
+                    <a href="#conversor-1"><button class="conversor-button op1" id="conversor-1">Binario a Decimal</button></a>
+                    <a href="#conversor-1"><button class="conversor-button op2">Decimal a Binario</button></a>
                 </div>
 
                 <div class="conversor-op1 conversor-item-list">
@@ -128,7 +128,14 @@
                 <div class="conversor-tutorial" id="tutorial">
                     <p class="conversor-tutorial-title">Tutorial:</p>
 
-                    <p class="conversor-tutorial-text">se hce asi de esta forma Bin</p>
+                    <p class="conversor-tutorial-text subtitulo">Binario a Decimal</p>
+                    
+                    <p class="conversor-tutorial-text"><img src="./img/binToDec1.gif" alt=""></p>
+                    <p class="conversor-tutorial-text">El número 3526 se divide por dos (2), base del sistema binario, se anota el residuo y el cociente se divide nuevamente por dos. Este procedimiento se repite hasta que el cociente final sea un dígito binario, es decir, uno o cero.</p>
+                    <p class="conversor-tutorial-text"><img src="./img/binToDec2.png" alt=""></p>
+
+                    <p class="conversor-tutorial-text">Resultado: 110111000110</p>
+
                 </div>
 
             </div>
@@ -137,8 +144,8 @@
             <div class="conversor-2" id="conversor-2">
                 <p class="conversor-title">Decimal y Hexadecimal</p>
                 <div class="conversor-options">
-                    <button class="conversor-button op1">Decimal a Hexadecimal</button>
-                    <button class="conversor-button op2">Hexadecimal a Decimal</button>
+                    <a href="#conversor-2"><button class="conversor-button op1" id="conversor-2">Decimal a Hexadecimal</button></a>
+                    <a href="#conversor-2"><button class="conversor-button op2">Hexadecimal a Decimal</button></a>
                 </div>
 
                 <div class="conversor-op1 conversor-item-list">
@@ -174,7 +181,18 @@
                 <div class="conversor-tutorial" id="">
                     <p class="conversor-tutorial-title">Tutorial:</p>
 
-                    <p class="conversor-tutorial-text">se hce asi de esta forma</p>
+                    <p class="conversor-tutorial-text subtitulo">Decimal a Hexadecimal</p>
+
+                    <p class="conversor-tutorial-text">Pasar el número 73596 del sistema decimal al sistema hexadecimal
+                        El número 73596 se divide sucesivamente por 16
+                        </p>
+                        <p class="conversor-tutorial-text"><img src="./img/decToHexa1.png" alt=""></p>
+                    <p class="conversor-tutorial-text">El número 73596 decimal corresponde al 11F7C hexadecimal.</p>
+
+
+
+
+
                 </div>
             </div>
 
@@ -182,8 +200,8 @@
             <div class="conversor-3" id="conversor-3">
                 <p class="conversor-title">Hexadecimal y Binario</p>
                 <div class="conversor-options">
-                    <button class="conversor-button op1">Hexadecimal a Binario</button>
-                    <button class="conversor-button op2">Binario a Hexadecimal</button>
+                    <a href="#conversor-3"><button class="conversor-button op1" id="conversor-3">Hexadecimal a Binario</button></a>
+                    <a href="#conversor-3"><button class="conversor-button op2">Binario a Hexadecimal</button></a>
                 </div>
 
                 <div class="conversor-op1 conversor-item-list">
@@ -216,7 +234,20 @@
                 <div class="conversor-tutorial" id="">
                     <p class="conversor-tutorial-title">Tutorial:</p>
 
-                    <p class="conversor-tutorial-text">se hce asi de esta forma</p>
+                    <p class="conversor-tutorial-text subtitulo">Hexadecimal a Binario</p>
+
+                    <p class="conversor-tutorial-text">Pasar el número hexadecimal 98A1 al sistema binario./p>
+                    <p class="conversor-tutorial-text"><img src="./img/hexaToBin1.png" alt=""></p>
+                    <p class="conversor-tutorial-text">Resultado: 1001100010100001</p>
+                    
+                    
+
+                    <p class="conversor-tutorial-text subtitulo">Binario a Hexadecimal</p>
+                    
+                    <p class="conversor-tutorial-text">Pasar el número binario 10101100011 al sistema hexadecimal.
+                        Se procede así:
+                        </p>
+                    <p class="conversor-tutorial-text"><img src="./img/binToHexa1.png" alt=""></p>
                 </div>
             </div>
         </div>
@@ -370,6 +401,8 @@
 
 
     <section class="integrantes-container" id="integrantes">
+
+        <p class="integrantes-text"><img src="./img/tec.png" alt=""></p>
 
             <p class="integrantes-title">Integrantes:</p>
             <ul class="integrantes-list">
